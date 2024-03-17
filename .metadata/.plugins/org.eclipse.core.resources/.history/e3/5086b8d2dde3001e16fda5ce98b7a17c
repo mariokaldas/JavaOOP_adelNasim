@@ -1,0 +1,29 @@
+package Inheritance;
+
+/*
+ * Subclass - child class - derived class - extended class
+ * 
+ * Now this class inherited the attributes and methods of its superclass Employee
+ * 
+ * */
+public class Developer extends Employee{
+
+	String projectName;
+	
+	public Developer(){
+		System.out.println("No parameter constructor - subclass");
+	}
+
+	public String getProjectName() {
+		return projectName;
+	}
+
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
+	}
+	
+	
+	
+	
+	
+}

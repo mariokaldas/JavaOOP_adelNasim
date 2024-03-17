@@ -1,0 +1,12 @@
+package passingObjects2methods;
+
+public class Math {
+
+	 int val;
+	 
+	 Math(int val){
+		 this.val = val;
+	 }
+	
+	 
+}

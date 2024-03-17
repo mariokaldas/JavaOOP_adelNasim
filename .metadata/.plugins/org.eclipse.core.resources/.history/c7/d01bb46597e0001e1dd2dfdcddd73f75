@@ -1,0 +1,11 @@
+package static_keyword;
+
+public class Student {
+	
+	int id;
+	String name;
+	
+	 // this attribute will be reserved  in memory only ONCE even with 1000 objects
+	static String college = "IT"; 
+
+}

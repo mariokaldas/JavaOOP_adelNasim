@@ -1,0 +1,23 @@
+package static_keyword;
+
+public class Student {
+	
+	int id;
+	
+	
+	static int count =1;
+	String name;
+	
+	 /* this attribute will be reserved  in memory only ONCE even with 1000 objects
+	  * this attribute doesn't belong to specific attribute it belongs to the whole class 
+	  */
+	static String college = "IT";
+	
+	Student(String name){ // we want the id entered by the system not manually
+		
+		this.id = count;
+		this.name = name;
+		count++;
+	}
+
+}

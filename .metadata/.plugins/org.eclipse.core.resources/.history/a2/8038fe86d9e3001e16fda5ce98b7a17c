@@ -1,0 +1,17 @@
+package Inheritance;
+
+// Super class - parent class - base class - general class
+public class Embloyee { 
+	
+	String name;
+	String emailAddress;
+	String phone;
+	String department;
+	String address;
+	int yearOfBirth;
+	
+	public Embloyee() {
+		System.out.println("No parameter constructor");
+	}
+
+}

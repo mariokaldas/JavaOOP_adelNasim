@@ -1,0 +1,13 @@
+package static_keyword;
+
+public class OuterClass {
+	
+	/*
+	 * static class MUST be nested
+	 * */
+	public static class InnerClass{
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package Inheritance;
+
+/*
+ * A subclass inherits all the members (fields, methods and nested class)
+ * from its super class. Constructors are not members, so they are not inherited by subclass
+ * BUT the constructor of the super class can be invoked from the subclass
+ * 
+ * The access level of protected modifier is within the package and outside the package
+ * through child class. if you don't make the child class, it can's be accessed from 
+ * outside the package
+ * 
+ * */
+
+
+public class Main {
+	public static void main(String args) {
+		
+		
+	}
+}

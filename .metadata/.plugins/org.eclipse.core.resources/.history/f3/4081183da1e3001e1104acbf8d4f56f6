@@ -1,0 +1,55 @@
+package passingObjects2methods;
+
+public class Main {
+	
+	/*
+	 * no pointers in java
+	 * no call by reference for primitive data-types (int float double...)
+	 * 
+	 * solution is to wrap this data types in object to use reference 
+	 * */
+	static void fn(int n) { 
+		n++;
+	}
+	
+	//this is the solution
+	static void fn(Test n) { 
+		n.number++;
+	}
+	
+	public static void main(String args[]) {
+		
+		int number =1;
+		fn(number); //pass by value
+		
+		Test obj = new  Test();
+		obj.number = 10;
+		fn(obj); //call by reference
+		
+		System.out.println("number = " + number);
+		System.out.println("obj.number = " + obj.number);
+		System.out.println();
+		
+		
+		Math n1 = new Math(1);
+		Math n2 = new Math(10);
+		Math n3 = new Math();
+		Math n4 = new Math();
+		
+		n3 = Math.add(n1, n2);
+		n4 = n1.add(n2);
+		
+		System.out.println("n3.val = " + n3.val);
+		System.out.println("n4.val = " + n4.val);
+		
+		//we assigned the address of n4 to n3 (they are the same object now) 
+//		n3=n4;// this assignment between addresses not content
+		// this is comparing the addresses of the two objects not the data members
+		if(n3 == n4)
+			System.out.println("Equal");
+		else
+			System.out.println("Not Equal");
+		
+	}
+		
+}

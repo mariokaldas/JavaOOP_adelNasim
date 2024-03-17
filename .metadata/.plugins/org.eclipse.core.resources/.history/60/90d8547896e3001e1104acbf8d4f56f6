@@ -1,0 +1,18 @@
+package passingObjects2methods;
+
+public class Main {
+	
+	static void fn(int n) { // no pointers in java
+		n++;
+	}
+	
+	public static void main(String args[]) {
+		
+		int number =1;
+		fn(number); //pass by value
+		System.out.println(number);
+		
+	}
+	
+	
+}

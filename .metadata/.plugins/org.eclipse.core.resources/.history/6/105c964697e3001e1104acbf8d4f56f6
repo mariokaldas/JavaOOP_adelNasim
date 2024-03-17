@@ -1,0 +1,24 @@
+package passingObjects2methods;
+
+public class Main {
+	
+	/*
+	 * no pointers in java
+	 * no call by reference for primitive data-types (int float double...)
+	 * 
+	 * solution is to wrap this data types in object to use reference
+	 *  
+	 * */
+	static void fn(int n) { 
+		n++;
+	}
+	
+	public static void main(String args[]) {
+		
+		int number =1;
+		fn(number); //pass by value
+		System.out.println(number);
+		
+	}
+		
+}

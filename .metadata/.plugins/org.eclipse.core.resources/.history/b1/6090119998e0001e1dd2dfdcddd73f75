@@ -1,0 +1,12 @@
+package static_keyword;
+
+public class main {
+	public static void main(String args[]) {
+		
+		Student s1 = new Student(123,"Ali");
+		
+		//You can invoke college attribute directly without an object
+		System.out.println(Student.college);
+	}
+
+}

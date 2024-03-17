@@ -1,0 +1,18 @@
+package passingObjects2methods;
+
+public class Main {
+	
+	static void fn(int n) {
+		n++;
+	}
+	
+	public static void main(String args[]) {
+		
+		int number =1;
+		fn(number);
+		System.out.println(number);
+		
+	}
+	
+	
+}

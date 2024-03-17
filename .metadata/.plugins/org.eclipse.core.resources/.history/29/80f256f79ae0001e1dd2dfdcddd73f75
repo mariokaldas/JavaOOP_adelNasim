@@ -1,0 +1,48 @@
+package static_keyword;
+
+public class Student {
+	
+	private int id;
+	
+	// count will bee initialized ONCE to preserve previous value
+	private static int count =1;
+	private String name;
+	private String password;
+	private boolean loggedIn;
+	
+	
+	 /* this attribute will be reserved  in memory only ONCE even with 1000 objects
+	  * this attribute doesn't belong to specific attribute it belongs to the whole class 
+	  */
+	static String college = "IT";
+	
+	
+	
+	
+	
+	Student(String name,String password){ // we want the id entered by the system not manually
+		
+		this.id = count;
+		this.name = name;
+		this.password = password;
+		count++;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + "]";
+	}
+	
+	
+	public boolean logIn(int enteredId,String enteredPassword) {
+		
+		if(enteredId == this.id  && enteredPassword.equals(password)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+
+}
